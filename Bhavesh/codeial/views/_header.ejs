@@ -1,0 +1,32 @@
+<header id="layout-header">
+    <nav>
+        <div class="mini-logo">
+            <p>
+                <a href='/'>
+                    SocioX
+                </a>
+            </p>
+        </div>
+    
+        <div class="auth-links">
+            <ul>
+                <% if (locals.user){ %>
+                <div id="logged-in">
+                    <li id="username-avatar">
+                        <img src="<%=user.avatar%>" alt="<%=user.name%>" style="border-radius: 50%;width: 2rem;">
+                        <a href="/users/profile/<%=user.id%>"><%= user.name %></a>
+                    </li>
+                    <li>
+                        <a href="/users/sign-out">Sign Out</a>
+                    </li>
+                </div>
+                <% }else{ %>
+                <div id="signin-container">
+                    <%- include('user_sign_in'); -%>
+                </div>
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+</header>
+<script src="https://kit.fontawesome.com/5af1b87095.js" crossorigin="anonymous"></script>

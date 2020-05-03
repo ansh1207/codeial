@@ -1,0 +1,61 @@
+#layout-header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        background: #2a628f;
+        color: white;
+        box-shadow: 1px 1px 1px 1px lightgrey;
+
+        .mini-logo{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            p{
+                margin: 5px;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+        }
+
+        .auth-links{
+            ul{
+                margin: 5% 5px;
+                display: flex;
+                list-style: none;
+                #logged-in{
+                    display:flex;
+                    li{
+                        margin-right: 20px;
+                    }
+                    #username-avatar{
+                        display: flex;
+                        img{
+                            margin-right:10px;
+                        }
+                    }
+                }
+                #signin-container{
+                    position: relative;
+                    bottom:10px;
+                    border-radius: none;
+                    
+                    #google-signin-button{
+                        a{
+                            color:black;
+                            padding: 10px;
+                            border-radius: none;
+                        }
+                    }    
+                    
+                }
+            }
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+    }
+}

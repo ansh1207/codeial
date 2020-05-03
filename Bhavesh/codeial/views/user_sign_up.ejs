@@ -1,0 +1,22 @@
+<div id="signup-text">
+    <h1>Sign Up</h1>
+</div>
+<div id="signup-form-container">
+    <form action="/users/create" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        <div id="signup-button">
+            <input type="submit" value="Sign Up" >
+        </div>
+        
+    </form>
+</div>
+
+<div id="google-signup-button">
+    <button>
+        <span><i class="fab fa-google"></i></span>
+        <a href="/users/auth/google">Google Sign-Up</a>
+    </button>
+</div>
